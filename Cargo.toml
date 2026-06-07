@@ -4,3 +4,13 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+clap = { version = "4.4.6", features = ["derive"] }
+nix = "0.27.1"
+libc = "0.2.149"
+
+[[bin]]
+name = "receiver"
+path = "src/bin/receiver.rs"
+[[bin]]
+name = "load_generator"
+path = "src/bin/load_generator.rs"
