@@ -29,7 +29,7 @@ fn main() -> std::io::Result<()> {
 
     match args.mode {
         Mode::Slow => run_slow_mode(socket)?,
-        Mode::Fast => println!("Fast mode not implemented yet!"),
+        Mode::Fast => run_fast_mode(socket)?,
     }
     Ok(())
 }
